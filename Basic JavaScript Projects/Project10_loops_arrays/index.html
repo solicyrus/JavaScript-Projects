@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>learning</title>
+    <script src="JS/main.js" defer></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            padding: 20px;
+            text-align: center;
+        }
+        p {
+            margin: 15px 0;
+            padding: 10px;
+            font-size: 18px;
+            color: #333;
+            border-radius: 8px;
+        }
+
+        button {
+            background-color: #897bb0; 
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #78ab7a;
+            transform: scale(1.05);
+        }
+
+        #Loop, #demo, #List_of_Instruments, #Array, #Constant, #output_1, #output_2, #car_Object, #break_example, #continue_example {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 10px auto;
+            text-align: left;
+        }
+
+    </style>
+    </head>
+    <body>
+        <p id="Loop"></p>
+        <button onclick ="Call_Loop()"> Click Here to Execute the Loop.</button>
+
+        <p id="demo"></p>
+        <button onclick="showLength()">Show String Length</button>
+
+        <p id="List_of_Instruments"></p>
+        <button onclick="for_Loop()">Click Here!</button>
+
+        <p id="Array"></p>
+        <button onclick="array_Function()">Click</button>
+
+        <p id="Constant"></p>
+        <button onclick="constant_function()">Press!</button>
+
+        <p id="output_1"></p>
+        <p id="output_2"></p>
+
+        <p id="car_Object"></p>
+
+        <p id="break_example"></p>
+        <p id="continue_example"></p>
+        <button onclick="breakLoop()">Run Break Example</button>
+        <button onclick="continueLoop()">Run Continue Example</button>
+    </body>
+</html>
